@@ -1,0 +1,135 @@
+/* =========================================
+   Paleta de Colores (image_4099cd.png)
+   ========================================= */
+:root {
+    --color-1: #e6dce6; /* Gris rosáceo */
+    --color-2: #fa3c46; /* Rojo / Rosa fuerte */
+    --color-3: #f0d28c; /* Dorado / Crema */
+    --color-4: #643c3c; /* Marrón oscuro */
+    --color-5: #f0e6e6; /* Blanco rosáceo */
+}
+
+/* =========================================
+   Estilos Generales
+   ========================================= */
+body {
+    background-color: var(--color-5);
+    color: var(--color-4);
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Ajuste del Navbar para que use el marrón oscuro de la paleta */
+.bg-dark {
+    background-color: var(--color-4) !important;
+}
+
+/* Espaciado para que el navbar fijo no tape el contenido */
+main {
+    padding-top: 80px; 
+}
+
+/* Botón primario adaptado a la paleta */
+.btn-primary {
+    background-color: var(--color-2);
+    border-color: var(--color-2);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #d9353e; /* Un tono ligeramente más oscuro */
+    border-color: #d9353e;
+}
+
+/* =========================================
+   Animaciones Hover (Hero Section)
+   ========================================= */
+.hero-section img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid var(--color-3); /* Borde opcional para resaltar */
+}
+
+/* Elevación e iluminación dorada al pasar el cursor */
+.hero-section img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(240, 210, 140, 0.8); /* Usa el RGB de #f0d28c */
+}
+
+/* =========================================
+   Sección de Tarjetas (Golshis)
+   ========================================= */
+.mi-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden; /* Mantiene la imagen dentro del borde redondeado */
+}
+
+/* Tarjeta 1: Golshi West (Roja) */
+#golshiwest {
+    background-color: var(--color-2);
+    color: white; 
+}
+#golshiwest .btn-outline-primary {
+    color: white;
+    border-color: white;
+}
+#golshiwest .btn-outline-primary:hover {
+    background-color: white;
+    color: var(--color-2);
+}
+#golshiwest:hover {
+    transform: translateY(-10px);
+    /* Resplandor rojo usando RGB (250, 60, 70) */
+    box-shadow: 0 15px 30px rgba(250, 60, 70, 0.6); 
+}
+
+/* Tarjeta 2: Golshi y Mcqeen (Dorada) */
+#golshimcqueen {
+    background-color: var(--color-3);
+    color: var(--color-4);
+}
+#golshimcqueen .btn-outline-primary {
+    color: var(--color-4);
+    border-color: var(--color-4);
+}
+#golshimcqueen .btn-outline-primary:hover {
+    background-color: var(--color-4);
+    color: var(--color-3);
+}
+#golshimcqueen:hover {
+    transform: translateY(-10px);
+    /* Resplandor dorado usando RGB (240, 210, 140) */
+    box-shadow: 0 15px 30px rgba(240, 210, 140, 0.7); 
+}
+
+/* Tarjeta 3: Colonel Golshi (Gris Rosáceo) */
+#colonelgolshi {
+    background-color: var(--color-1);
+    color: var(--color-4);
+}
+#colonelgolshi .btn-outline-primary {
+    color: var(--color-4);
+    border-color: var(--color-4);
+}
+#colonelgolshi .btn-outline-primary:hover {
+    background-color: var(--color-4);
+    color: var(--color-1);
+}
+#colonelgolshi:hover {
+    transform: translateY(-10px);
+    /* Resplandor gris/rosa usando RGB (230, 220, 230) */
+    box-shadow: 0 15px 30px rgba(230, 220, 230, 1); 
+}
+
+/* =========================================
+   Ajustes de Tabla y Formulario
+   ========================================= */
+.table-dark {
+    background-color: var(--color-4) !important;
+}
+
+.alert-info {
+    background-color: var(--color-1);
+    color: var(--color-4);
+    border-color: var(--color-3);
+}
